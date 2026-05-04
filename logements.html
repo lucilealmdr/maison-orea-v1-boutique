@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nos logements — Maison Oréa</title>
+<link rel="icon" type="image/png" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header scrolled" style="position: sticky;">
+  <div class="nav-row">
+    <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Maison Oréa"><span><span class="brand-name">MAISON ORÉA</span><span class="brand-tag">Conciergerie</span></span></a>
+    <nav class="main-nav"><a href="logements.html" class="active">Nos logements</a><a href="a-propos.html">Qui sommes-nous</a><a href="contact.html">Contact</a></nav>
+    <div class="header-actions"><span class="lang-toggle"><span class="active">FR</span> · EN</span><a href="contact.html" class="btn-header">Réserver</a><button class="menu-toggle"><span></span><span></span><span></span></button></div>
+  </div>
+</header>
+<nav class="mobile-nav"><a href="index.html">Accueil</a><a href="logements.html">Nos logements</a><a href="a-propos.html">Qui sommes-nous</a><a href="contact.html">Contact</a><a href="contact.html" class="mobile-cta">Nous contacter</a></nav>
+
+<section class="page-hero" style="margin-top: -88px;">
+  <div class="page-hero-bg"><img src="assets/img/josiane-5.jpg" alt=""></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Accueil</a><span class="sep">—</span><span>Nos logements</span></div>
+    <h1>Une collection <em class="italic">confidentielle.</em></h1>
+    <p class="lead">Lorem ipsum dolor sit amet consectetur adipiscing elit. Maisons d'hôtes intimistes, villas familiales d'exception, cabines insolites — chaque logement Maison Oréa est sélectionné pour son âme et l'expérience qu'il offre.</p>
+  </div>
+</section>
+
+<!-- Featured properties — large -->
+<section style="padding-top: 5rem;">
+  <div class="container-wide">
+    <div class="lookbook-head fade-up">
+      <div>
+        <span class="eyebrow">Actuellement en gestion</span>
+        <span class="divider"></span>
+        <h2 style="margin-top: 1rem;">Deux maisons, deux univers.</h2>
+      </div>
+      <p class="lead muted" style="max-width: 44ch;">Notre portefeuille démarre avec une sélection rigoureuse. Peu de biens, beaucoup d'attention.</p>
+    </div>
+
+    <!-- Big photo cards -->
+    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; margin-bottom: 5rem;" class="fade-up">
+      <a href="logement-pierre-amoureuse.html" style="display: block;">
+        <div style="position: relative; aspect-ratio: 4/3; overflow: hidden;">
+          <img src="assets/img/josiane-1.jpg" alt="La Pierre Amoureuse" style="width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease);">
+          <div style="position: absolute; top: 1.5rem; left: 1.5rem; background: var(--bordeaux); color: var(--blanc); padding: 0.5rem 1rem; font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;">En gestion</div>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 2rem; background: linear-gradient(transparent, rgba(31,27,22,0.85)); color: var(--blanc);">
+            <h3 style="color: var(--blanc); font-size: 2rem; margin-bottom: 0.5rem;">La Pierre Amoureuse</h3>
+            <div style="font-size: 0.85rem; letter-spacing: 0.05em; color: rgba(245,239,230,0.8);">Saint-Apollinaire · 14 voyageurs · Lac de Serre-Ponçon</div>
+          </div>
+        </div>
+      </a>
+      <a href="logement-pierre-amoureuse.html" style="display: block;">
+        <div style="position: relative; aspect-ratio: 4/3; overflow: hidden;">
+          <img src="assets/img/michel-1.jpg" alt="Lumipod" style="width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease);">
+          <div style="position: absolute; top: 1.5rem; left: 1.5rem; background: var(--bordeaux); color: var(--blanc); padding: 0.5rem 1rem; font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;">En gestion</div>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 2rem; background: linear-gradient(transparent, rgba(31,27,22,0.85)); color: var(--blanc);">
+            <h3 style="color: var(--blanc); font-size: 2rem; margin-bottom: 0.5rem;">Lumipod</h3>
+            <div style="font-size: 0.85rem; letter-spacing: 0.05em; color: rgba(245,239,230,0.8);">Gap · 4 voyageurs · Cabine d'exception</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Soon -->
+    <div style="background: var(--creme); padding: 4rem 3rem; text-align: center;" class="fade-up">
+      <span class="eyebrow">Prochainement</span>
+      <span class="divider divider-center" style="margin-block: 1rem;"></span>
+      <h3 style="font-size: 2.25rem; margin-bottom: 1rem;">D'autres maisons rejoignent bientôt notre collection.</h3>
+      <p class="muted" style="max-width: 56ch; margin: 0 auto 2rem;">Lorem ipsum dolor sit amet. Vous êtes propriétaire d'une maison de caractère dans les Hautes-Alpes ? Parlons-en.</p>
+      <a href="contact.html" class="btn btn-primary">Proposer mon bien</a>
+    </div>
+  </div>
+</section>
+
+<!-- Garanties -->
+<section class="dark">
+  <div class="container">
+    <div style="text-align: center; max-width: 720px; margin: 0 auto 4rem;" class="fade-up">
+      <span class="eyebrow light">Notre promesse</span>
+      <span class="divider divider-center" style="margin-block: 1rem;"></span>
+      <h2>Quatre garanties Maison Oréa.</h2>
+    </div>
+    <div class="services-grid">
+      <article class="service-card"><span class="num">01</span><span class="icon">◇</span><h3>Sélection rigoureuse</h3><span class="div-line"></span><p>Chaque logement est visité, audité, validé. Qualité avant quantité.</p></article>
+      <article class="service-card"><span class="num">02</span><span class="icon">◇</span><h3>Accueil hôtelier</h3><span class="div-line"></span><p>Concierge dédié sur place, briefing soigné, attentions personnalisées.</p></article>
+      <article class="service-card"><span class="num">03</span><span class="icon">◇</span><h3>Linge premium</h3><span class="div-line"></span><p>Linge de qualité hôtelière, peignoirs, kit d'accueil signé.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-band-grid">
+      <div><span class="eyebrow light">Réservation</span><h2 style="margin-top: 1rem;">Trouvons le séjour qui vous ressemble.</h2><p>Décrivez vos envies, votre période, votre budget — nous vous orientons vers le logement adapté.</p></div>
+      <div class="actions"><a href="contact.html" class="btn btn-ghost light">Être conseillé</a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><span class="brand-name">MAISON ORÉA</span><span class="brand-tag">Conciergerie</span><p>Conciergerie boutique-hôtel dans la région de Gap. L'excellence en toute simplicité.</p></div>
+      <div class="footer-col"><h5>Maison Oréa</h5><ul><li><a href="a-propos.html">Qui sommes-nous</a></li><li><a href="logements.html">Nos logements</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Voyageurs</h5><ul><li><a href="logements.html">Nos propriétés</a></li><li><a href="contact.html">Réserver</a></li></ul></div>
+      <div class="footer-col"><h5>Propriétaires</h5><ul><li><a href="contact.html">Confier mon bien</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div>© 2026 Maison Oréa · contact@oreaconciergerie.fr</div><div class="social"><a href="#">IG</a><a href="#">FB</a></div></div>
+  </div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
