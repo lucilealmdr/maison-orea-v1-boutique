@@ -346,3 +346,28 @@ section { padding-block: clamp(4rem, 9vw, 8rem); position: relative; }
 .amenity-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem 2.5rem; }
 .amenity { display: flex; gap: 0.85rem; padding: 0.7rem 0; border-bottom: 1px solid var(--bordure); font-size: 0.95rem; color: var(--argile); }
 .amenity span { color: var(--bordeaux); font-family: var(--serif); font-size: 1.1rem; }
+
+
+/* ============================================
+   PATCH RESPONSIVE MOBILE (ajout v2)
+   ============================================ */
+@media (max-width: 768px) {
+  /* Forms : champs en 1 colonne au lieu de 2 */
+  .field-row { grid-template-columns: 1fr; gap: 0; }
+
+  /* Amenity grid en 1 colonne */
+  .amenity-grid { grid-template-columns: 1fr; gap: 0; }
+
+  /* Cible les inline styles grid 2-3-4 cols → 1 col mobile */
+  div[style*="grid-template-columns: 1fr 1fr"],
+  div[style*="grid-template-columns: repeat(3"],
+  div[style*="grid-template-columns: repeat(4"] {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  /* V1 : ribbon-grid en 1 col sur petit mobile */
+  .ribbon-grid { grid-template-columns: 1fr; gap: 1rem; }
+}
